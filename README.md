@@ -7,6 +7,25 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## How To Install Project
+
+Prerequisites
+- PHP (>= 7.4)
+- Composer
+- Node.js (>= 14.x) & NPM (Node Package Manager)
+
+Clone the Repository
+git clone https://github.com/your-username/your-project.git
+cd your-project
+
+Install PHP Dependencies
+composer install
+
+Configure Enviroment Variables
+cp .env.example .env
+php artisan key:generate
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
