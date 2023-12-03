@@ -9,22 +9,31 @@
 
 ## How To Install Project
 
-Prerequisites
-- PHP (>= 7.4)
-- Composer
-- Node.js (>= 14.x) & NPM (Node Package Manager)
+- Prerequisites
+    - PHP (>= 7.4)
+    - Composer
+    - Node.js (>= 14.x) & NPM (Node Package Manager)
 
-Clone the Repository
-git clone https://github.com/your-username/your-project.git
-cd your-project
+- Clone the Repository
+    - git clone https://github.com/your-username/your-project.git
+    - cd your-project
 
-Install PHP Dependencies
-composer install
+- Install PHP Dependencies
+    - composer install
 
-Configure Enviroment Variables
-cp .env.example .env
-php artisan key:generate
+- Configure Enviroment Variables
+    - cp .env.example .env
+    - php artisan key:generate
 
+- Database Setup
+    - php artisan migrate:fresh -seed
+
+- Install & Build npm
+    - npm install
+    - npm run build
+
+- Run Development Server
+    - php artisan serve
 
 ## About Laravel
 
