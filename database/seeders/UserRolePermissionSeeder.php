@@ -49,11 +49,12 @@ class UserRolePermissionSeeder extends Seeder
             $permissionUpdateRole = Permission::create(['name' => 'update role']);
             $permissionDeleteRole = Permission::create(['name' => 'delete role']);
 
-            $roleStaff->syncPermissions([$permissionReadRole->id, $permissionCreateRole->id]);
-            $roleAdmin->syncPermissions([$permissionReadRole->id, $permissionCreateRole->id, $permissionUpdateRole->id, $permissionDeleteRole->id]);
 
             $staff->assignRole($roleStaff);
-            $staff->assignRole($roleStaff);
+            $admin->assignRole($roleAdmin);
+
+            $roleStaff->syncPermissions([$permissionReadRole->id, $permissionCreateRole->id]);
+            $roleAdmin->syncPermissions([$permissionReadRole->id, $permissionCreateRole->id, $permissionUpdateRole->id, $permissionDeleteRole->id]);
 
             DB::commit();
 

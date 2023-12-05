@@ -4,14 +4,21 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use function Laravel\Prompts\alert;
+
 class RoleController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        if($request->user()->hasRole('admin')){
+            return 'halo admin';
+        }
+
+        return redirect('/home')->with('error', 'Only admins can access this page');
+
     }
 
     /**
