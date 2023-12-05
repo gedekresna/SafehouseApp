@@ -23,6 +23,10 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::controller(RoleController::class)->group(function(){
-    Route::get('/roles', 'index');
+Route::middleware('auth')->group(function(){
+    Route::resource('roles', RoleController::class);
 });
+
+// Route::controller(RoleController::class)->group(function(){
+//     Route::get('/roles', 'index');
+// });

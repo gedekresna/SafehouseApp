@@ -13,11 +13,8 @@ class RoleController extends Controller
      */
     public function index(Request $request)
     {
-        if($request->user()->hasRole('admin')){
-            return 'halo admin';
-        }
-
-        return redirect('/home')->with('error', 'Only admins can access this page');
+        $this->authorize('read role');
+        return 'halo admin';
 
     }
 
