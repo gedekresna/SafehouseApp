@@ -1,18 +1,20 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
+
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class MenuController extends Controller
+class ReportController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $active = 'menu';
-        return view('admin.menu.index',compact('active'));
+        $active = 'report';
+        return view('admin.reports.index',compact('active'));
     }
 
     /**

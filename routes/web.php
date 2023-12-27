@@ -4,8 +4,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\Admin\MenuController;
+use App\Http\Controllers\Admin\ReportController;
 use App\Http\Controllers\Admin\CategoryController;
-use App\Http\Controllers\MenuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +31,7 @@ Route::middleware('auth')->group(function(){
     Route::resource('roles', RoleController::class);
     Route::resource('category', CategoryController::class);
     Route::resource('menu', MenuController::class);
+    Route::resource('report', ReportController::class);
 });
 
 // Route::controller(RoleController::class)->group(function(){

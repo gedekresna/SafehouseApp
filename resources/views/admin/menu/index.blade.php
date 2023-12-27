@@ -38,11 +38,8 @@
                         <li class="list-group-item">Coffee Baileys @include('layouts.element.counter_btn')</li>
                     </ul>
                 </div>
+
             </main>
         </div>
     </div>
-@endsection
-
-@section('js')
-    <script src="{{ asset('js/category.js') }}"></script>
 @endsection
