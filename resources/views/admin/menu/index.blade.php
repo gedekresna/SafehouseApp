@@ -1,5 +1,15 @@
 @extends('home')
 
+<style>
+    .menuCardTitle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 18px;
+    }
+</style>
 @section('content')
     <div class="container-fluid">
         <div class="row">
@@ -17,17 +27,17 @@
                     </div>
                 </div>
 
-                {{-- <table class="display" id="table-category" width="100%">
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>Name</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table> --}}
+                <div class="card" style="width: 18rem;">
+                    <img alt="..." class="card-img-top" src="{{ asset('uploads/images/coffee.jpg') }}">
+                    <p class="menuCardTitle">Coffee</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Americano
+                            @include('layouts.element.counter_btn')
+                        </li>
+                        <li class="list-group-item">Coffee Latte @include('layouts.element.counter_btn')</li>
+                        <li class="list-group-item">Coffee Baileys @include('layouts.element.counter_btn')</li>
+                    </ul>
+                </div>
             </main>
         </div>
     </div>

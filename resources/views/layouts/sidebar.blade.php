@@ -22,35 +22,10 @@
                     Menu
                 </a>
             </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span class="align-text-bottom" data-feather="file"></span>
-                    Orders
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span class="align-text-bottom" data-feather="shopping-cart"></span>
-                    Products
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span class="align-text-bottom" data-feather="users"></span>
-                    Customers
-                </a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
                     <span class="align-text-bottom" data-feather="bar-chart-2"></span>
                     Reports
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span class="align-text-bottom" data-feather="layers"></span>
-                    Integrations
                 </a>
             </li>
         </ul>
@@ -88,5 +63,6 @@
                 </a>
             </li>
         </ul>
+
     </div>
 </nav>
