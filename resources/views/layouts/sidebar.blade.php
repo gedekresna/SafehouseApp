@@ -11,10 +11,18 @@
             <li class="nav-item">
                 <a aria-current="page" class="nav-link {{ $active === 'category' ? 'active' : '' }}"
                     href="{{ route('category.index') }}">
-                    <span class="align-text-bottom" data-feather="home"></span>
-                    Category
+                    <span class="align-text-bottom" data-feather="list"></span>
+                    Menu Category
                 </a>
             </li>
+            <li class="nav-item">
+                <a aria-current="page" class="nav-link {{ $active === 'menu' ? 'active' : '' }}"
+                    href="{{ route('menu.index') }}">
+                    <i class="fa-solid fa-utensils" style="margin-right: 8px"></i>
+                    Menu
+                </a>
+            </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="#">
                     <span class="align-text-bottom" data-feather="file"></span>

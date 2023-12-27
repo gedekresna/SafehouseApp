@@ -52,3 +52,5 @@
     })
   })()
   
+
+  console.log('masuk dashboard js')
