@@ -2,9 +2,17 @@
     <div class="position-sticky sidebar-sticky pt-3">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a aria-current="page" class="nav-link active" href="#">
+                <a aria-current="page" class="nav-link {{ $active === 'home' ? 'active' : '' }}"
+                    href="{{ route('home') }}">
                     <span class="align-text-bottom" data-feather="home"></span>
                     Dashboard
+                </a>
+            </li>
+            <li class="nav-item">
+                <a aria-current="page" class="nav-link {{ $active === 'category' ? 'active' : '' }}"
+                    href="{{ route('category.index') }}">
+                    <span class="align-text-bottom" data-feather="home"></span>
+                    Category
                 </a>
             </li>
             <li class="nav-item">
