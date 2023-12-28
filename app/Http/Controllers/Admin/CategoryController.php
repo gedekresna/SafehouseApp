@@ -21,7 +21,8 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        $active = 'category';
+        return view('admin.category.create', compact('active'));
     }
 
     /**

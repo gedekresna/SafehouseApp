@@ -9,9 +9,13 @@
         <div class="row">
 
             <main class="col-md-9 ms-sm-auto col-lg-10 p-md-4">
-                <div
-                    class="d-flex justify-content-between flex-md-nowrap align-items-center border-bottom mb-3 flex-wrap pb-2 pt-3">
-                    <h1 class="h2">Reports</h1>
+                <div class="d-flex justify-content-between flex-md-nowrap border-bottom mb-3 flex-wrap pb-2">
+                    {{-- <h1 class="h2">Category</h1> --}}
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li aria-current="page" class="breadcrumb-item active">Reports</li>
+                        </ol>
+                    </nav>
                     <div class="btn-toolbar mb-md-0 mb-2">
 
                         <button class="btn btn-primary">
